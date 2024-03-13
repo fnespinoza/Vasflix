@@ -97,6 +97,8 @@ class SignButtons extends StatelessWidget {
         ),
         const Button(
           text: "Sign in with Google",
+          hasImage: true,
+          image: "google.png",
           backgroundColor: white,
           foreground: black,
           buttonHeight: 55,
@@ -108,6 +110,8 @@ class SignButtons extends StatelessWidget {
         const Button(
           text: "Enter as a guest",
           backgroundColor: white,
+          hasIcon: true,
+          icon: Icons.person,
           foreground: black,
           buttonHeight: 55,
           buttonWidth: 263,
