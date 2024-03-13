@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vasflix_app/screens/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,11 +10,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Container(
-          color: Colors.white,
-        ));
+    return const MaterialApp(
+        debugShowCheckedModeBanner: false, home: LoginPageScreen());
   }
 }
 //Para el commit y apartar mi pantallaa
