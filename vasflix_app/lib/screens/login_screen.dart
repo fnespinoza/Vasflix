@@ -41,7 +41,10 @@ class SignButtons extends StatelessWidget {
         const SizedBox(
           height: 85,
         ),
-        const Button(
+        Button(
+          action: () {
+            print("Log In");
+          },
           text: "Log in",
           backgroundColor: caribbean,
           foreground: white,
@@ -52,6 +55,7 @@ class SignButtons extends StatelessWidget {
           height: 16,
         ),
         Button(
+          action: () {},
           text: "Sign Up",
           backgroundColor: navy,
           foreground: white,
@@ -95,7 +99,8 @@ class SignButtons extends StatelessWidget {
         const SizedBox(
           height: 30,
         ),
-        const Button(
+        Button(
+          action: () {},
           text: "Sign in with Google",
           hasImage: true,
           image: "google.png",
@@ -107,7 +112,8 @@ class SignButtons extends StatelessWidget {
         const SizedBox(
           height: 16,
         ),
-        const Button(
+        Button(
+          action: () {},
           text: "Enter as a guest",
           backgroundColor: white,
           hasIcon: true,
