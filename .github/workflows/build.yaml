@@ -28,4 +28,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: ios-ipa
-        path: build/ios/iphoneos/Runner.app
+        path: vasflix_app/build/ios/iphoneos/Runner.app
