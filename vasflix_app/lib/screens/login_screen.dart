@@ -42,9 +42,7 @@ class SignButtons extends StatelessWidget {
           height: 85,
         ),
         Button(
-          action: () {
-            print("Log In");
-          },
+          action: () {},
           text: "Log in",
           backgroundColor: caribbean,
           foreground: white,
