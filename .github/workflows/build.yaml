@@ -1,0 +1,31 @@
+name: Build and Deploy Flutter App
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.x'  # Replace with your desired Flutter version
+
+    - name: Install dependencies
+      run: flutter pub get
+      working-directory: vasflix_app
+
+    - name: Build artifact
+      run: flutter build ios --release --no-codesign
+      working-directory: vasflix_app
+    
+    - name: Upload iOS artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: ios-ipa
+        path: build/ios/iphoneos/Runner.app
